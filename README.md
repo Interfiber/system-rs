@@ -43,4 +43,3 @@ fn main() {
   println!("Output of ls -al /usr/lib:\n{}", cmd);
 }
 ```
-The first 
