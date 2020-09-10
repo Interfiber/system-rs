@@ -1,5 +1,5 @@
 # System.rs
-A Library for running shell command in rust
+A Library for running shell commands in rust
 
 ## Description
 System.rs allows you to run native system command from rust. But why not just use the Command
