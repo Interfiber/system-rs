@@ -21,7 +21,7 @@ fn main(){
 let _cmd = exec("ffmpeg", "-i input-video.avi -vn -acodec copy output-audio.aac");
 }
 ```
-The system.rs on looks alot cleaner and more readable, and by printing out the ```_cmd``` varible in system.rs you get all of the output of the command ran.
+The system.rs one looks alot cleaner and more readable, and by printing out the ```_cmd``` varible in system.rs gets all of the output of the command ran.
 
 ## Installation
 If you use cargo you can add this to your projects ```Cargo.toml``` :
@@ -37,6 +37,8 @@ Execute a command and get its output:
 ```rust
 use system_rs::exec;
 fn main() {
+  // Supply the command as the first argument, thhen all the arguments after it
+  // exec("COMMAND", "ALL OF THE ARGUMENTS");
   let cmd = exec("ls", "-al /usr/lib");
   println!("Output of ls -al /usr/lib:\n{}", cmd);
 }
